@@ -1,20 +1,25 @@
-
 import './App.css';
-import Home from './component/Home';
-import Navbar from './component/Navbar';
-import Footer from './component/Footer';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
+import Home from "./component/Home";
+import Navbar from "./component/Navbar";
+import Footer from "./component/Footer";
+import Products from './component/Products';
+import ProdukDetail from './component/ProdukDetail';
 
 function App() {
   return (
-   <>
-    <Navbar />
-    <Home />
-    <Footer />
-    
-    
-   
-   </>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<ProdukDetail />} />
+        {/* <Route path="https://sistemtoko.com/public/demo/product?page=1&sorting=Lates&categories=all&search_name=none" element={<ProdukDetail />} /> */}
+      </Routes>
+      <Footer />
+    </>
   );
 }
 
