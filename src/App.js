@@ -16,7 +16,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<ProdukDetail />} />
-        {/* <Route path="https://sistemtoko.com/public/demo/product?page=1&sorting=Lates&categories=all&search_name=none" element={<ProdukDetail />} /> */}
       </Routes>
       <Footer />
     </>
