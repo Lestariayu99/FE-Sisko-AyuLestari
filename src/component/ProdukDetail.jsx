@@ -75,7 +75,7 @@ function ProdukDetail() {
                     </div>
   
                   <button className="btn btn-outline-dark px-4 py-2">
-                    BUY NOW
+                    <i className="fa fa-shopping-cart me-1"></i>BUY NOW
                   </button>
                  
                   <NavLink to="/cart" className="btn btn-outline-dark ms-2">
